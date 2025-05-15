@@ -26,6 +26,5 @@ public class VariablesNaming {
         // COUNTRY_CODE = "US" 에러 출력
 
 
-
     }
 }
