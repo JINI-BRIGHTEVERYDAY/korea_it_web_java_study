@@ -11,7 +11,11 @@ public class VariablesNaming {
         * 파스칼 표기법 (쌍봉낙하 표기법) => LastName => 클래스명, 파일명
         * 카멜 표기법 (단봉낙하 표기법) => lastName => 변수명, 메소드명
         * 5. 예약어 사용불가(public, static, void, int, float...)
+        *
         * */
+
+        // boolean
+        // is, flag으로 처음 시작하는 것이 일반적임
 
         String carBrandName = "KIA";
         String carModelName = "EV6";
