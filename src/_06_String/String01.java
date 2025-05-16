@@ -31,6 +31,5 @@ public class String01 {
         System.out.println(str.endsWith("movie"));
         // 해당 문자열로 끝나냐? => boolean
 
-
     }
 }
