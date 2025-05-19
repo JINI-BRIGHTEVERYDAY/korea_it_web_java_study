@@ -19,5 +19,9 @@ public class DoWhile {
             System.out.println(i);
             i++;
         } while(i<=5);
+
+        System.out.println("---------------------------------");
+
+
     }
 }
