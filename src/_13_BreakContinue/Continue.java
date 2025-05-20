@@ -25,13 +25,13 @@ public class Continue {
 //            }
 //        }
 
-        int wating = 50; // 대기 인원수
+        int waitng = 50; // 대기 인원수
         int nowNum = 1; // 현재 입장 번호 (시작 번호)
         int max = 20; // 판매 가능한 갯수
         int sold = 0; // 현재 판매량
         int noShow = 12; // 노쇼 번호
 
-        while(nowNum <= wating) {
+        while(nowNum <= waitng) {
             System.out.println(nowNum + "번 손님 입장");
 
             if (nowNum == noShow){
@@ -47,6 +47,8 @@ public class Continue {
             nowNum++;
 
         }
+
+
 
     }
 
