@@ -15,7 +15,7 @@ public class Array01 {
 //        String[] countries = new String[5];
 //
 //        // 배열 선언 두 번째 방법
-////        String[] countries = new String[5];
+////      String countries[] = new String[5];
 //
 //        countries[0] = "Hungary";
 //        countries[1] = "Croatia";

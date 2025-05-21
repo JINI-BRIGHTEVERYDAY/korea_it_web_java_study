@@ -32,7 +32,7 @@ public class MultiArray {
                 {"B1", "B2", "B3", "B4"},
                 {"C1", "C2", "C3", "C4", "C5"}
         };
-        //System.out.println(seats[1][1]);
+        System.out.println(seats2[1][1]);
         System.out.println(seats2[0][2]);
 
 //        String[][] multiArray = new String[][][]{
