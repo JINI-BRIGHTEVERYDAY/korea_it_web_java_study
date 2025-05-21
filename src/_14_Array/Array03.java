@@ -13,7 +13,7 @@ public class Array03 {
         System.out.println(Arrays.toString(nums));
 
         // 내림차순
-        Arrays.sort(nums, Comparator.reverseOrder());
+        //Arrays.sort(nums, Comparator.reverseOrder());
         // int는 원시적인 자료형 => primitive type
 
         // Integer는 클래스로 이루어져있고, Wrapper 클래스라고도 한다 - 한번 감싸져 있는
