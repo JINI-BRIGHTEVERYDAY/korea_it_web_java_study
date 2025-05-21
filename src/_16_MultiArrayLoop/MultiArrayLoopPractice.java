@@ -26,4 +26,5 @@ public class MultiArrayLoopPractice {
         }
         System.out.println("3*3 배열의 모든 요소의 합: " + sum);
     }
+
 }
