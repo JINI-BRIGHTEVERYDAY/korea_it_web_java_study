@@ -35,10 +35,18 @@ public class Scanner01 {
 //        String name;
         // 두 개 입력받고 출력하기
 
-        int age = scanner.nextInt();
-        scanner.nextLine();
-        String name = scanner.nextLine();
-        System.out.println("나이는 " + age + "이름은 " + name + "입니다.");
+//        int age = scanner.nextInt();
+//        scanner.nextLine();
+//        String name = scanner.nextLine();
+//        System.out.println("나이는 " + age + "이름은 " + name + "입니다.");
 
+
+        int age;
+        String name;
+        System.out.print("나이를 입력해주세요: ");
+        age = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("이름을 입력해주세요: ");
+        name = scanner.nextLine();
     }
 }
