@@ -1,37 +1,37 @@
 package _18_Overloading;
 
 
-public class Overloading {
-    public static int getPower(int number) {
-        return number * number;
-    }
+//public class Overloading {
+//    public static int getPower(int number) {
+//        return number * number;
+//    }
+//
+//    public static int getPower(double doubleNum) {
+//        int number = (int) doubleNum;
+//        return number * number;
+//    }
 
-    public static int getPower(double doubleNum) {
-        int number = (int) doubleNum;
-        return number * number;
-    }
+//    public static int getPower(String strNum) {
+//        int number = Integer.parseInt(strNum);
+//        return number * number;
+//    }
 
-    public static int getPower(String strNum) {
-        int number = Integer.parseInt(strNum);
-        return number * number;
-    }
-
-    public static int getPower(int number, int exponent) {
-        int result = 1;
-        for (int i = 0; i < exponent; i++) {
-            result *= number;
-        }
-        return result;
-    }
+//    public static int getPower(int number, int exponent) {
+//        int result = 1;
+//        for (int i = 0; i < exponent; i++) {
+//            result *= number;
+//        }
+//        return result;
+//    }
 
 
-    public static void main(String[] args) {
-        System.out.println(getPower(3));
-        System.out.println(getPower(2.3));
-        System.out.println(getPower("4"));
-        System.out.println(getPower(2, 4));
-
-    }
+//    public static void main(String[] args) {
+//        System.out.println(getPower(3));
+//        System.out.println(getPower(2.3));
+//        System.out.println(getPower("4"));
+//        System.out.println(getPower(2, 4));
+//
+//    }
 
     // 메소드 오버로딩
     // 같은 이름의 메소드를 여러 개 선언하는 것
@@ -53,9 +53,9 @@ public class Overloading {
     // 문자열 이름, 정수 나이 전달 -> 이름 나이 출력
     // 문자열 이름, 정수 나이, 문자열 이메일 -> 이름 나이 이메일 출력
 
-    public static String printinfo(String "name") {
-        return printinfo();
-    }
-
-
-}
+//    public static String printinfo(String "name") {
+//        return printinfo();
+//    }
+//
+//
+//}
