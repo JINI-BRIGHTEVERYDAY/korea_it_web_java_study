@@ -9,28 +9,25 @@ package _18_Overloading;
 public class OverloadingExample {
 
     public static void printInfo(String name) {
-        name = "JINI";
-        System.out.println("이름은" + name + "입니다");
+//        name = "JINI";
+        System.out.println("이름은 " + name + " 입니다");
     }
 
     public static void printInfo(String name, int age) {
-        name = "Jini";
-        age = 28;
-        System.out.println("이름은" + name + "이고, 나이는 " + age + "입니다. ");
+//        name = "JINI";
+//        age = 28;
+        System.out.println("이름은 " + name + "이고, 나이는 " + age + "세 입니다. ");
 
     }
 
     public static void printInfo(String name, int age, String email) {
-        name = "Jini";
-        age = 28;
-        email = "jinibrighteveryday@gmail.com";
-        System.out.println("이름은" + name + "이고, 나이는 " + age + "이며, 이메일은 " + email + "입니다. ");
+//        name = "JINI";
+//        age = 28;
+//        email = "jinibrighteveryday@gmail.com";
+        System.out.println("이름은 " + name + "이고, 나이는 " + age + "이며, 이메일은 " + email + "입니다. ");
 
 
     }
-
-
-
 
     public static void main(String[] args) {
         printInfo("JINI");

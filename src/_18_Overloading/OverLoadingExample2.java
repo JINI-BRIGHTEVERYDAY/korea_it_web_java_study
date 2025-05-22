@@ -10,19 +10,22 @@ public class OverLoadingExample2 {
     public static void add(int x, int y) {
         int result = x + y;
         System.out.println("두 정수의 합은 "+ result + "입니다.");
+        // System.out.println(a + " + " + b + " = " + (a + b));
     }
 
     public static void add(double x, double y) {
         double result = x + y;
         System.out.println("두 실수의 합은 " + result + "입니다");
+        // System.out.println(a + " + " + b + " = " + (a + b));
     }
 
-    public static void add(String x, String y) {
+    public static void add(String strNum1, String strNum2) {
 
-        double a = Double.parseDouble(x);
-        double b = Double.parseDouble(y);
+        double a = Double.parseDouble(strNum1);
+        double b = Double.parseDouble(strNum2);
         double result = a + b;
         System.out.println("두 문자열의 합은 " + result + " 입니다.");
+        // System.out.println(a + " + " + b + " = " + (Double.parseDouble(x) + Double.parseDouble(y)));
     }
 
     public static void main(String[] args) {
