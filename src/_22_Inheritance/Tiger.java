@@ -8,6 +8,7 @@ package _22_Inheritance;
 * 1. super() : 부모 클래스의 생성자를 호출하는 키워드 / 기본 생성자라면 () 아무런 값이 없다
 * 그러나 매개변수 생성자라면 () 매개변수가 포함되는 것이다
 *
+* 2. super.메소드() 또는 super.필드명(멤버변수) : 부모클래스의 메소드 또는 멤버변수에 접근
 * */
 
 public class Tiger extends Animal {
@@ -36,5 +37,21 @@ public class Tiger extends Animal {
     }
 
 
+    // 상속 관계에서 자식 클래스가 부모 클래스의 메서드를 재정의함
+    // 부모로부터 물려받은 메소드를 자식이 '다르게' 실행하도록 바꾸는 것
+    // 부모 클래스의 메서드를 자식 클래스에서 동일한 이름, 매개변수, 리턴 타입으로 재정의함
+    //
 
+    @Override
+    public void move() {
+        super.move();
+        System.out.println(getAnimalName() + "가 움직입니다.");
+    }
+
+    public void hunt() {
+        System.out.println(getAnimalName() + "가 사냥을 합니다.");
+        // 왜 슈퍼를 안쓰냐?
+        // 상속과 메소드에서는 탐색 순서가 있는데
+        // 자식 클래스에서 해당 메소드가 없담녀 부모클래스에서 찾는다
+    }
 }

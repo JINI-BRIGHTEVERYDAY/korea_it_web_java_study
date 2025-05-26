@@ -19,8 +19,25 @@ public class Main {
         animal1.setAnimalName("고양이");
         animal1.setAnimalAge(3);
         animal1.move();
+        // animal1.setStriped(); 불가능
 
         Tiger tiger1 = new Tiger();
+        //속성이 정해져있지 않음
+        tiger1.setAnimalName("호랭이");
+        System.out.println(tiger1.getAnimalName());
+        tiger1.setAnimalAge(3);
+        System.out.println(tiger1.getAnimalAge());
+        tiger1.move();
+        tiger1.hunt();
+        tiger1.setStriped(true);
+
+        Tiger tiger2 = new Tiger("백호", 3, false);
+
+        Human human = new Human("JINI", 28);
+        System.out.println(human.getAnimalName());
+        System.out.println(human.getAnimalAge());
+        human.move();
+        human.read("SF소설");
 
     }
 }
