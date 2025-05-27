@@ -15,14 +15,19 @@ public class Main {
         // 부모의 코드(메소드) 변경 가능 => 오버라이딩
         // 오버로딩 vs 오버라이딩
 
+        // 클래스 새로 정의하기
         Animal animal1 = new Animal();
+
+        // setter로 값 대입하기
         animal1.setAnimalName("고양이");
         animal1.setAnimalAge(3);
+
+        //move에 대한 메소드 호출하기
         animal1.move();
         // animal1.setStriped(); 불가능
 
+
         Tiger tiger1 = new Tiger();
-        //속성이 정해져있지 않음
         tiger1.setAnimalName("호랭이");
         System.out.println(tiger1.getAnimalName());
         tiger1.setAnimalAge(3);
@@ -31,13 +36,11 @@ public class Main {
         tiger1.hunt();
         tiger1.setStriped(true);
 
-        Tiger tiger2 = new Tiger("백호", 3, false);
+        tiger2 = new Tiger("백호", 3, false);
 
-        Human human = new Human("JINI", 28);
-        System.out.println(human.getAnimalName());
-        System.out.println(human.getAnimalAge());
-        human.move();
-        human.read("SF소설");
+
+
+        //속성이 정해져있지 않음
 
     }
 }

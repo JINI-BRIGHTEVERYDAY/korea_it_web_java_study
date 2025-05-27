@@ -3,9 +3,13 @@ package _21_Class.BankAccount;
 public class BankAccount {
     private int balance;
 
+    // 생성자 생성
     BankAccount() {
+
         System.out.println("계좌가 개설되었습니다. 현재 잔액: " + balance + "원");
     }
+
+    // 메소드(입금, 출금)
 
     // 입금받기
     public void deposit(int amount) {

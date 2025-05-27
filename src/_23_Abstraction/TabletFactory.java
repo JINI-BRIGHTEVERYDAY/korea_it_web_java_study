@@ -7,14 +7,14 @@ package _23_Abstraction;
 // 메인에서 produce("아이패드 6세대")
 // upgrade("아이패드 7세대")
 
-public class TabletFactory extends Factory{
-    @Override
-    public void produce(String model) {
-        super(name);
-    }
-
-    @Override
-    public void manage() {
-        System.out.println(getName() + "공장을 관리합니다.");
-    }
-}
+//public class TabletFactory extends Factory{
+//    @Override
+//    public void produce(String model) {
+//        super(name);
+//    }
+//
+//    @Override
+//    public void manage() {
+//        System.out.println(getName() + "공장을 관리합니다.");
+//    }
+//}

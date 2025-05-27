@@ -6,25 +6,36 @@ package _21_Class.Student;
 // StudentMain에서 객체 생성 후에 여러분 정보 대입(주소 대충)
 // ShowInfo() 호출해서 정보출력
 
-public class Student {
+/*
+* 1. public class Student와 StudentMain을 먼저 만들기
+* 2. Class Student 안에 속성을 만들기 -> String name, int age...
+* 3. 메소드 showInfo 만들고 출력하기 -> System.out.println("이름은 " + name);...
+* 4. 그 다음 메인 StudentMain으로 가기
+*
+*
+* */
 
-        private String name;
-        private int age;
-        private String email;
-        private String address;
+public class Student { // 속성을 먼저 만들기
+    private String name;
+    // Private 변수를 걸어놓으면 해당 클래스 안에서만 접근이 가능함
+    private int age;
+    private String email;
+    private String address;
 
-    // private 일때 값을 넣는 방법
-    // 1. 생성자
+
+    // private일 때 값을 넣는 방법은?
+    // 1. 생성자를 만들어서 애초에 객체 생성할 때 바로 넣게끔
     // 2. setter
 //    Student(String name, int age, String email, String address) {
 //        this.name = name;
 //        this.age = age;
 //        this.email = email;
 //        this.address = address;
-//
+//    } 이렇게 입력하는 법
 
-// Alt Insert => Constructor 클릭하여 다 불러오기
-// 찾지 않아도 알아서 생성자 불러오기 가능
+
+    // alt insult로 constructor 불러오기
+    // 1. 생성자
     public Student(String name, int age, String email, String address) {
         this.name = name;
         this.age = age;
@@ -32,9 +43,8 @@ public class Student {
         this.address = address;
     }
 
-    // 2. setter
-    // Alt Insert setter 클릭하여 불러오기
-    // 이런 기능 있을 때는 알고 써야 함
+    // 2. setter -> setter라는 메소드를 통해서 클래스의 속성에 접근하기
+    // alt insult로 setter 불러오기
 
     public void setName(String name) {
         this.name = name;
@@ -52,10 +62,7 @@ public class Student {
         this.address = address;
     }
 
-    // setter는 메소드를 거쳐서 클래스 안에서 접근함
-
-
-    //getter
+    // getter
 
 
     public String getName() {
@@ -74,14 +81,13 @@ public class Student {
         return address;
     }
 
-// 메소드가 대신 접근을 해준다.
 
-    public void showInfo() {
-            System.out.println("이름은" + name);
-            System.out.println("나이는" + age);
-            System.out.println("이메일은" + email);
-            System.out.println("주소는" + address);
-        }
+    public void showInfo() { // 메소드로 출력
+        System.out.println("이름은 " + name);
+        System.out.println("나이는 " + age);
+        System.out.println("이메일은 " + email);
+        System.out.println("주소는 " + address);
 
+    }
 
 }

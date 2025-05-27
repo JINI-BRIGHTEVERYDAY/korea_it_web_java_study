@@ -12,6 +12,7 @@ public class WaterBottle {
     private int currentWater;
 
     WaterBottle() {
+
         System.out.println("현재 물의 양은 " + currentWater + "입니다.");
     }
 
@@ -27,6 +28,8 @@ public class WaterBottle {
 //    }
 
     // 위에는 틀리게 작성한 코드이므로 리뷰해야 함
+
+    // 물을 채우기
 
     public void fill(int amount) {
         if (amount >= 0 && currentWater + amount <= 1000) {
@@ -49,7 +52,7 @@ public class WaterBottle {
         }
     }
 
-    // getter 사용
+    // getter 사용 -> 현재 물병의 양에 접근해야 한다
     public int getCurrentWater() {
         return currentWater;
     }
