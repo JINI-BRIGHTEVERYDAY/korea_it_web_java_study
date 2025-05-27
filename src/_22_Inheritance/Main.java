@@ -36,9 +36,13 @@ public class Main {
         tiger1.hunt();
         tiger1.setStriped(true);
 
-        tiger2 = new Tiger("백호", 3, false);
+        Tiger tiger2 = new Tiger("백호", 3, false);
 
-
+        Human human = new Human("이동윤", 27);
+        System.out.println(human.getAnimalName());
+        System.out.println(human.getAnimalAge());
+        human.move();
+        human.read(" 불편한 편의점");
 
         //속성이 정해져있지 않음
 

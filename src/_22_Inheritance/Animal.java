@@ -42,7 +42,7 @@ public class Animal {
 
 
     // getter
-    public  String getAnimalName() {
+    public String getAnimalName() {
 
         return animalName;
     }
