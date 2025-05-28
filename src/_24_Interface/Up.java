@@ -1,6 +1,7 @@
-package _24_Interface;
+package _24_interface;
 
 public interface Up {
 
     void onUp();
+
 }

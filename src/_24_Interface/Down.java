@@ -1,4 +1,4 @@
-package _24_Interface;
+package _24_interface;
 
 public interface Down {
 
