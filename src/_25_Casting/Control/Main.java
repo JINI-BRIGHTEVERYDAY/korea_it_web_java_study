@@ -1,27 +1,25 @@
-package _25_Casting.Control;
+package _25_casting.Control;
 
 public class Main {
     public static void main(String[] args) {
-        // Power 인터페이스
-        // on(), off()
-        // Tv 클래스, Computer, Speaker, LEDLight, Mouse, SmartPhone
-        // 재정의하고 고유메서드 하나 -> 자유로 할 것
-
-//        Power[] powers= {new Computer(), new Mouse(), new Tv()};
+        //Power 인터페이스
+        //on(), off()
+        //Tv, Computer, Speaker, LEDLight, Mouse, SmartPhone
+        //재정의하고 고유메서드 1개
+//         Power[] powers = new Power[5];
 //        CentralControl centralControl = new CentralControl(powers);
-        CentralControl centralControl1 = new CentralControl(new Power[5]);
 
-        centralControl1.addDevice(new Computer());
-        centralControl1.addDevice(new Tv());
-        centralControl1.addDevice(new Mouse());
-        centralControl1.addDevice(new Speaker());
-        centralControl1.addDevice(new LEDlight());
-        centralControl1.addDevice(new SmartPhone());
+//        Power[] powers = {new Computer(), new Mouse(), new Tv()};
+//        CentralControl centralControl = new CentralControl(powers);
+         CentralControl centralControl = new CentralControl(new Power[5]);
 
-        centralControl1.powerOn();
-//        centralControl1.powerOff();
+         centralControl.addDevice(new Computer());
+         centralControl.addDevice(new Tv());
+         centralControl.addDevice(new Mouse());
+         centralControl.addDevice(new Speaker());
+         centralControl.addDevice(new LEDLight());
+         centralControl.addDevice(new SmartPhone());
 
-        centralControl1.performSpecificMethod();
-
+         centralControl.performSpecificMethod();
     }
 }

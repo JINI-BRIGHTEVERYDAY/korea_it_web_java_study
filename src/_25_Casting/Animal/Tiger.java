@@ -1,6 +1,7 @@
-package _25_Casting.Animal;
+package _25_casting.Animal;
 
-public class Tiger extends Animal {
+public class Tiger extends Animal{
+
     @Override
     public void speak() {
         System.out.println("어흥");

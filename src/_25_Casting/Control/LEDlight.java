@@ -1,18 +1,17 @@
-package _25_Casting.Control;
+package _25_casting.Control;
 
-public class LEDlight implements Power{
-
+public class LEDLight implements Power{
     @Override
     public void on() {
-        System.out.println("LED전원을 켭니다");
+        System.out.println("LEDLight의 전원을 켭니다.");
     }
 
     @Override
     public void off() {
-        System.out.println("LED전원을 끕니다");
+        System.out.println("LEDLight의 전원을 끕니다.");
     }
 
-    public void lightControling() {
-        System.out.println("LED 조작합니다");
+    public void changeColor() {
+        System.out.println("LEDLight의 색상을 바꿉니다.");
     }
 }

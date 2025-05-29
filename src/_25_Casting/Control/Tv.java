@@ -1,10 +1,10 @@
-package _25_Casting.Control;
+package _25_casting.Control;
 
-public class Tv implements Power{
+public class Tv implements Power {
 
     @Override
     public void on() {
-        System.out.println("TV의 전원을 켭니다");
+        System.out.println("TV의 전원을 켭니다.");
     }
 
     @Override
@@ -13,6 +13,6 @@ public class Tv implements Power{
     }
 
     public void changeChannel() {
-        System.out.println("TV채널을 바꿉니다.");
+        System.out.println("TV의 채널을 돌립니다.");
     }
 }

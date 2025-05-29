@@ -1,11 +1,9 @@
-package _25_Casting.Control;
+package _25_casting.Control;
 
 public class Mouse implements Power{
-
-
     @Override
     public void on() {
-        System.out.println("마우스의 전원을 켭니다");
+        System.out.println("마우스의 전원을 켭니다.");
     }
 
     @Override
@@ -13,7 +11,8 @@ public class Mouse implements Power{
         System.out.println("마우스의 전원을 끕니다.");
     }
 
-    public void leftPointing() {
-        System.out.println("마우스를 왼쪽으로 조작합니다.");
+    public void leftClick() {
+        System.out.println("마우스 왼쪽버튼을 클릭 합니다.");
     }
+
 }

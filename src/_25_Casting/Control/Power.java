@@ -1,4 +1,4 @@
-package _25_Casting.Control;
+package _25_casting.Control;
 
 public interface Power {
 
