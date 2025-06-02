@@ -14,6 +14,6 @@ public class Person {
         System.out.println("안녕하세요, 저는" + name + " 입니다.");
     }
 
-    public static void showPopulation
+//    public static void showPopulation;
 
 }
