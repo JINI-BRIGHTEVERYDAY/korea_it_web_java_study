@@ -20,6 +20,13 @@ public class UserEntity {
     public UserEntity() {
     }
 
+    public UserEntity(int userId, String username, int age, String email) {
+        this.userId = userId;
+        this.username = username;
+        this.age = age;
+        this.email = email;
+    }
+
     public int getUserId() {
         return userId;
     }
@@ -54,11 +61,12 @@ public class UserEntity {
 
     @Override
     public String toString() {
-        return "UserEntity(" +
+        return "UserEntity{" +
                 "userId=" + userId +
-                ", username=" + username +
+                ", username='" + username + '\'' +
                 ", age=" + age +
-                ", email=" + email +
-                ")";
+                ", email='" + email + '\'' +
+                '}';
     }
+
 }

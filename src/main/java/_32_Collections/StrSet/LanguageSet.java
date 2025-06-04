@@ -1,4 +1,4 @@
-package _32_Collections.strSet;
+package _32_Collections.StrSet;
 
 // 문제
 // 1. "JAVA", "PYTHON", "C", "PYTHON", "JAVA", "JAVA", "C++", "C", "JAVA"
@@ -11,8 +11,6 @@ package _32_Collections.strSet;
 
 import java.util.*;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class LanguageSet {
