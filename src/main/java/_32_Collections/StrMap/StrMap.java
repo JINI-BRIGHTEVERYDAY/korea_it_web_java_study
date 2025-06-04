@@ -7,6 +7,7 @@ public class StrMap {
         Map<String, String> strMap1 = new HashMap<>();
 
         //Map에 Key - Value 쌍으로 삽입하여 => .put(키, 값)
+        //키는 중복이 못되고 값만 중복가능
         strMap1.put("kor2025001", "김준일");
         strMap1.put("kor2025002", "김준이");
         strMap1.put("kor2025003", "김준삼");
@@ -29,17 +30,16 @@ public class StrMap {
 //        //키 값 전체를 set 형태로 반환한다
 //
 //
-//        //entrySet()을 이용했을 때
-//        for(Map.Entry<String, String> entry : strMap1.entrySet()) {
-//            System.out.println("키 : " + entry.getKey() + " 값 : " + entry.getValue());
-//        }
-//
-//        System.out.println(strMap1.keySet());
-//        //키만 set 형태로 반환
-//
-//        for(String key : strMap1.keySet()) {
-//            System.out.println("키: " + key + " 값: " + strMap1.get(key));
-//        }
+        //entrySet()을 이용했을 때
+        for(Map.Entry<String, String> entry : strMap1.entrySet()) {
+            System.out.println("키 : " + entry.getKey() + " 값 : " + entry.getValue());
+        }
+        System.out.println(strMap1.keySet());
+
+        //키만 set 형태로 반환
+        for(String key : strMap1.keySet()) {
+            System.out.println("키: " + key + " 값: " + strMap1.get(key));
+        }
 
 
         // entrySet을 이용하게 되면, 키값 전체의 내용이 set형태로 오는데, keySet처럼 한 가지만
@@ -69,6 +69,7 @@ public class StrMap {
 
 
         //Map을 Set으로 변환하기
+        //key-Value 형태로 -> Map.Entry
         Set<Map.Entry<String, String>> entrySet1 = new HashSet<>();
         Set<Map.Entry<String, String>> entrySet2 = strMap1.entrySet();
 
@@ -78,7 +79,8 @@ public class StrMap {
         //Map을 List로 변환하기
         List<Map.Entry<String, String>> entryList1 = new ArrayList<>();
         entryList1.addAll(entrySet2);
-        //Map은 collection이 아니기 때문에 set을 거쳐서 넣는다
+        // 서로가 컬렉션이면 전부 다 넣기
+        //Map은 collection이 아니기 때문에, set을 거쳐서 넣는다
 
         System.out.println(entryList1);
 
@@ -87,7 +89,7 @@ public class StrMap {
         // 정렬은 고려되지 않고 만든다 => 그래서 순서를 보장하지 않는다
         // 그럼에도 정렬을 원한다면?
 
-        Collections.sort(entryList1,Map.Entry.comparingByValue());
+        Collections.sort(entryList1, Map.Entry.comparingByValue());
         System.out.println("값 기준 정렬: " + entryList1);
 
         Collections.sort(entryList1, Map.Entry.comparingByKey());
