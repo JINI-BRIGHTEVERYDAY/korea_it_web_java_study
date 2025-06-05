@@ -1,12 +1,29 @@
 package _33_Json;
 
+//Book 객체 → JSON 문자열:
+//{"isbn":"978-1234567890","title":"자바의 정석","author":"남궁성","price":"38000","publisher":"도우출판"}
+//
+//JSON → Map:
+//{isbn=978-1234567890, title=자바의 정석, author=남궁성, price=38000, publisher=도우출판}
+//
+//Map → Pretty JSON:
+//{
+//  "isbn": "978-1234567890",
+//  "title": "자바의 정석",
+//  "author": "남궁성",
+//  "price": "38000",
+//  "publisher": "도우출판"
+//}
+//
+//JSON → Book 객체:
+//Book(isbn=978-1234567890, title=자바의 정석, author=남궁성, price=38000, publisher=도우출판)
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import lombok.AllArgsConstructor;
 import lombok.ToString;
 
 import java.util.Map;
-
 
 @AllArgsConstructor
 @ToString
@@ -15,16 +32,14 @@ class Book {
     private String title;
     private String author;
     private String price;
-    private String pubisher;
+    private String publisher;
 }
 
 public class BookJson {
     public static void main(String[] args) {
         Gson gson = new Gson();
-        Gson gsonBuillder = new GsonBuilder().setPrettyPrinting().create();
-//        String bookJson = null;
+        Gson gsonBuilder = new GsonBuilder().setPrettyPrinting().create();
 
-        // java 객체 => json 변환
         Book book = new Book(
                 "978-1234567890",
                 "자바의 정석",
@@ -33,10 +48,30 @@ public class BookJson {
                 "도우출판"
         );
 
-        System.out.println("Book객체 -> JSON문자열");
-        System.out.println(book);
+        //Book 객체 → JSON 문자열:
+        String jsonBook = gson.toJson(book);
+        System.out.println("Book 객체 → JSON 문자열");
+        System.out.println(jsonBook);
 
-        Map<String,String> book2 = gson.fromJson(bookJson, Map.class);
-        System.out.println(book2);
+        System.out.println();
+
+        //JSON → Map
+        Map<String, String> bookMap = gson.fromJson(jsonBook, Map.class);
+        System.out.println("JSON → Map");
+        System.out.println(bookMap);
+
+        System.out.println();
+
+        //Map → Pretty JSON
+        String prettyJsonFromMap = gsonBuilder.toJson(bookMap);
+        System.out.println("Map → Pretty JSON");
+        System.out.println(prettyJsonFromMap);
+
+        System.out.println();
+
+        //JSON → Book 객체
+        Book parsedBook = gson.fromJson(jsonBook, Book.class);
+        System.out.println("JSON → Book 객체");
+        System.out.println(parsedBook);
     }
 }

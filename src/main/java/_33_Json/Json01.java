@@ -47,7 +47,5 @@ public class Json01 {
 
         System.out.println(json2);
 
-
-
     }
 }

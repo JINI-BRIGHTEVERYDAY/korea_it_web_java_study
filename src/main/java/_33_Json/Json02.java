@@ -73,6 +73,7 @@ public class Json02 {
         //json -> User 객체로
         User user2 = gson.fromJson(userJson, User.class);
         System.out.println(user2);
+        // .class로 해야 단위가 맞아진다
 
         //json -> jsonObject => json 과 jsonObject는 같은 형태가 아니다
         //studentJson의 자료형은 String -> jsonObject의 자료형 JsonObject
