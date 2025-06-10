@@ -13,6 +13,9 @@ public class KoreaItStudent {
     private int age;
 
     public String getStatic() {
+
         return static_curriculum;
     }
+
+
 }
